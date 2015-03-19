@@ -2,7 +2,6 @@ test-data
 .*.swp
 *.pyc
 output
-*.wav
 
 bin
 obj
