@@ -1,0 +1,6 @@
+sudo apt-get install mpg123
+mpg123 -w 1.wav 1.mp3
+
+make -C src/gmm
+./src/speaker-recognition.py -t enroll -i "data/person*" -m model.out
+./src/speaker-recognition.py -t predict -i "data/xcq.wav" -m model.out
